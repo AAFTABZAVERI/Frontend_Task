@@ -1,19 +1,17 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { Router } from '@angular/router';
-import { CommentsComponent } from '../comments/comments.component';
 
 @Component({
-  selector: 'app-comment-table',
-  templateUrl: './comment-table.component.html',
-  styleUrls: ['./comment-table.component.scss']
+  selector: 'app-post',
+  templateUrl: './post.component.html',
+  styleUrls: ['./post.component.scss']
 })
+export class PostComponent implements OnInit {
 
-export class CommentTableComponent implements OnInit {
   displayedColumns: string[] = ['userId', 'id', 'title','body','actions'];
   dataSource = new MatTableDataSource<any>();
   @ViewChild(MatPaginator) paginator: MatPaginator;

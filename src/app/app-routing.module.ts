@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CommentTableComponent } from './comment-table/comment-table.component';
 import { CommentsComponent } from './comments/comments.component';
 import { NavComponent } from './nav/nav.component';
+import { PostComponent } from './post/post.component';
 
 const routes: Routes = [
   {
@@ -11,7 +11,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: CommentTableComponent,
+        component: PostComponent,
       },
       {
         path: 'comments/:userId',

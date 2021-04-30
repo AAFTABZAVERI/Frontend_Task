@@ -39,15 +39,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { ClipboardModule } from '@angular/cdk/clipboard';
 import { MatBadgeModule } from "@angular/material/badge";
 import { HttpClientModule } from '@angular/common/http';
-import { CommentTableComponent } from './comment-table/comment-table.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommentsComponent } from './comments/comments.component';
+import { PostComponent } from './post/post.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    CommentTableComponent,
-    CommentsComponent
+    CommentsComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,

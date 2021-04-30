@@ -1,5 +1,6 @@
 table {
     width: 100%;
+    
 }
 
 .mat-form-field {
@@ -9,7 +10,9 @@ table {
 
 td,
 th {
-    width: 20%;
+    width: 15% 15% 35% 25% 10%; 
+     //text-align: justify;
+    margin-left: 20px;
 }
 
 .search {
